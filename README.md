@@ -1,4 +1,4 @@
-# Dicoding Submission - Belajar Fundamental Android
+# Dicoding Submission - Kelas Belajar Fundamental Android
 
 Submission 1 - Aplikasi User Github
 
