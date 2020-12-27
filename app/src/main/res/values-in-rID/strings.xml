@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Submission Dicoding BFAA</string>
+    <string name="setting">Pengaturan</string>
+    <string name="name">Nama</string>
+    <string name="username">Username</string>
+    <string name="profile">Profil</string>
+    <string name="hint_search">Ketik untuk mencari pengguna Github</string>
+    <string name="type">Pengguna</string>
+    <string name="location">Lokasi</string>
+    <string name="office">Kantor</string>
+    <string name="follower">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="repository">Repositori</string>
+    <string name="share">Bagikan</string>
+    <string name="tab_follower">PENGIKUT</string>
+    <string name="tab_following">MENGIKUTI</string>
+    <string name="github_user">Pengguna Github</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="find_user">Mari Temukan Pengguna Github</string>
+    <string name="no_result">Maaf! Hasil Tidak Ditemukan :(</string>
+    <string name="not_found_detail">Kami mohon maaf atas apa yang Anda cari. Silakan coba cara lain</string>
+</resources>
