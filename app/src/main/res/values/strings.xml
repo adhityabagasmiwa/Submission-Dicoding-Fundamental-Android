@@ -1,135 +1,22 @@
-<!--
-  ~ Created by Adhitya Bagas on 14/11/2020
-  ~ Copyright (c) 2020 . All rights reserved.
-  -->
-
 <resources>
-    <string name="app_name">Github User</string>
-
-    <!-- Other string resources-->
-
-    <string-array name="username">
-        <item>adhityabagasmiwa</item>
-        <item>JakeWharton</item>
-        <item>amitshekhariitbhu</item>
-        <item>romainguy</item>
-        <item>chrisbanes</item>
-        <item>tipsy</item>
-        <item>ravi8x</item>
-        <item>jasoet</item>
-        <item>budioktaviyan</item>
-        <item>hendisantika</item>
-        <item>sidiqpermana</item>
-    </string-array>
-
-    <string-array name="name">
-        <item>Adhitya Bagasmiwa Permana</item>
-        <item>Jake Wharton</item>
-        <item>Amit Shekhar</item>
-        <item>Romain Guy</item>
-        <item>Chris Banes</item>
-        <item>David</item>
-        <item>Ravi Tamada</item>
-        <item>Deny Prasetyo</item>
-        <item>Budi Oktaviyan</item>
-        <item>Hendi Santika</item>
-        <item>Sidiq Permana</item>
-    </string-array>
-
-    <string-array name="location">
-        <item>Yogyakarta</item>
-        <item>Pittsburgh, PA, USA</item>
-        <item>New Delhi, India</item>
-        <item>California</item>
-        <item>Sydney, Australia</item>
-        <item>Trondheim, Norway</item>
-        <item>India</item>
-        <item>Kotagede, Yogyakarta, Indonesia</item>
-        <item>Jakarta, Indonesia</item>
-        <item>Bojongsoang - Bandung Jawa Barat</item>
-        <item>Jakarta Indonesia</item>
-    </string-array>
-
-    <string-array name="repository">
-        <item>15</item>
-        <item>102</item>
-        <item>37</item>
-        <item>9</item>
-        <item>30</item>
-        <item>56</item>
-        <item>28</item>
-        <item>44</item>
-        <item>110</item>
-        <item>1064</item>
-        <item>65</item>
-    </string-array>
-
-    <string-array name="company">
-        <item>Code Studio</item>
-        <item>Google, Inc.</item>
-        <item>MindOrksOpenSource</item>
-        <item>Google</item>
-        <item>Google working on @android</item>
-        <item>Working Group Two</item>
-        <item>AndroidHive | Droid5</item>
-        <item>gojek-engineering</item>
-        <item>KotlinID</item>
-        <item>JVMDeveloperID @KotlinID @IDDevOps</item>
-        <item>Nusantara Beta Studio</item>
-    </string-array>
-
-    <string-array name="followers">
-        <item>4</item>
-        <item>5153</item>
-        <item>5153</item>
-        <item>7972</item>
-        <item>14725</item>
-        <item>788</item>
-        <item>18628</item>
-        <item>277</item>
-        <item>178</item>
-        <item>428</item>
-        <item>465</item>
-    </string-array>
-
-    <string-array name="following">
-        <item>15</item>
-        <item>2</item>
-        <item>2</item>
-        <item>0</item>
-        <item>1</item>
-        <item>0</item>
-        <item>3</item>
-        <item>39</item>
-        <item>23</item>
-        <item>61</item>
-        <item>10</item>
-    </string-array>
-
-    <string-array name="avatar">
-        <item>@drawable/user1</item>
-        <item>@drawable/user11</item>
-        <item>@drawable/user2</item>
-        <item>@drawable/user3</item>
-        <item>@drawable/user4</item>
-        <item>@drawable/user5</item>
-        <item>@drawable/user6</item>
-        <item>@drawable/user7</item>
-        <item>@drawable/user8</item>
-        <item>@drawable/user9</item>
-        <item>@drawable/user10</item>
-    </string-array>
-
-    <string name="full_name">Full Name</string>
+    <string name="app_name">Submission Dicoding BFAA</string>
+    <string name="setting">Setting</string>
+    <string name="name">Name</string>
     <string name="username">Username</string>
-    <string name="profile">Detail User</string>
+    <string name="profile">Profile</string>
+    <string name="hint_search">Type here to search user Github</string>
+    <string name="type">User</string>
     <string name="location">Location</string>
-    <string name="company">Company</string>
-    <string name="repository">Repository</string>
-    <string name="_125">125</string>
-    <string name="followers">Follower</string>
-    <string name="_40">40</string>
+    <string name="office">Office</string>
+    <string name="follower">Followers</string>
     <string name="following">Following</string>
-    <string name="_20">20</string>
+    <string name="repository">Repository</string>
+    <string name="share">Share</string>
+    <string name="tab_follower">FOLLOWERS</string>
+    <string name="tab_following">FOLLOWING</string>
     <string name="github_user">Github User</string>
+    <string name="change_language">Change Language</string>
+    <string name="find_user">Let\'s Find User Github</string>
+    <string name="no_result">Sorry! No Result Found :(</string>
+    <string name="not_found_detail">We\'re sorry what you were looking for. Please try another way</string>
 </resources>

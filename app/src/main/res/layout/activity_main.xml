@@ -1,58 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ Created by Adhitya Bagas on 14/11/2020
-  ~ Copyright (c) 2020 . All rights reserved.
-  -->
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.activities.MainActivity">
 
-    <LinearLayout
+    <SearchView
+        android:id="@+id/svUser"
+        style="@style/Theme.SearchView"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:background="@color/colorAccent"
-        android:elevation="4dp"
-        android:orientation="horizontal">
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/searchview_background"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@null"
+        android:focusable="false"
+        android:queryHint="@string/hint_search"
+        android:theme="@style/Theme.SearchView" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="@string/github_user"
-            android:textColor="@color/textColorWhite"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <androidx.core.widget.NestedScrollView
+    <ProgressBar
+        android:id="@+id/progressBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/svUser"
+        tools:listitem="@layout/item_user_list"
+        android:visibility="gone" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_item_row_data"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:nestedScrollingEnabled="false"
-                android:paddingTop="24dp"
-                app:layout_editor_absoluteX="1dp"
-                app:layout_editor_absoluteY="1dp"
-                tools:listitem="@layout/item_user_list"/>
+    <include
+        android:id="@+id/animateSearch"
+        layout="@layout/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
 
-        </LinearLayout>
+    <include
+        android:id="@+id/animateNotResult"
+        layout="@layout/not_found_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
-    </androidx.core.widget.NestedScrollView>
-
-</LinearLayout>
+</RelativeLayout>
