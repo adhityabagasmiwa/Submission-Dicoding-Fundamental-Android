@@ -1,10 +1,15 @@
+<!--
+  ~ Created by Adhitya Bagas on 29/12/2020
+  ~ Copyright (c) 2020 . All rights reserved.
+  -->
+
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.SubmissionDicodingBFAA" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.SubmissionDicodingBFAA" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryVariant">@color/secondary</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
@@ -12,5 +17,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ThemeOverlay.DicodingSubmissionBFAA.AppWidgetContainer" parent="">
+        <item name="appWidgetBackgroundColor">@color/light_blue_900</item>
+        <item name="appWidgetTextColor">@color/light_blue_200</item>
     </style>
 </resources>

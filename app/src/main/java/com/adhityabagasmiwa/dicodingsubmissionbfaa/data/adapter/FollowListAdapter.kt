@@ -1,3 +1,8 @@
+/*
+ * Created by Adhitya Bagas on 29/12/2020
+ * Copyright (c) 2020 . All rights reserved.
+ */
+
 package com.adhityabagasmiwa.dicodingsubmissionbfaa.data.adapter
 
 import android.content.Intent
@@ -23,8 +28,7 @@ class FollowListAdapter : RecyclerView.Adapter<FollowListAdapter.FollowViewHolde
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FollowViewHolder {
-        val mView =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_user_list, parent, false)
+        val mView = LayoutInflater.from(parent.context).inflate(R.layout.item_user_list, parent, false)
         return FollowViewHolder(mView)
     }
 

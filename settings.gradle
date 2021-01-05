@@ -1,2 +1,8 @@
+/*
+ * Created by Adhitya Bagas on 29/12/2020
+ * Copyright (c) 2020 . All rights reserved.
+ */
+include ':consumerapp'
+
 include ':app'
 rootProject.name = "Dicoding Submission BFAA"

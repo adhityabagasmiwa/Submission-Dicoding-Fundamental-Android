@@ -1,20 +1,17 @@
+/*
+ * Created by Adhitya Bagas on 29/12/2020
+ * Copyright (c) 2020 . All rights reserved.
+ */
+
 package com.adhityabagasmiwa.dicodingsubmissionbfaa.ui.activities
 
-import android.annotation.SuppressLint
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.Typeface
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.RelativeLayout
 import android.widget.SearchView
-import android.widget.TextView
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.res.ResourcesCompat
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.adhityabagasmiwa.dicodingsubmissionbfaa.R
@@ -39,7 +36,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.setting, menu)
+        menuInflater.inflate(R.menu.menu, menu)
         if (menu != null) {
             menu.findItem(R.id.action_share_menu).isVisible = false
         }
@@ -48,7 +45,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_setting_menu) {
-            val mIntent = Intent(this, SettingActivity::class.java)
+            val mIntent = Intent(this, SettingPreferenceActivity::class.java)
+            startActivity(mIntent)
+            return true
+        }
+        if (item.itemId == R.id.action_fav_menu) {
+            val mIntent = Intent(this, FavoriteActivity::class.java)
             startActivity(mIntent)
             return true
         }
@@ -91,11 +93,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getData() {
-        mainViewModel = ViewModelProvider(
-            this,
-            ViewModelProvider.NewInstanceFactory()
-        ).get(MainVieModel::class.java)
-        mainViewModel.getUser().observe(this, Observer { results ->
+        mainViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(MainVieModel::class.java)
+        mainViewModel.getUser().observe(this, { results ->
             if ((results != null) && (results.size != 0)) {
                 adapter.setData(results)
                 showLoading(false)
@@ -107,27 +106,10 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    @SuppressLint("SetTextI18n")
     private fun setActionBar() {
-        val actionBar = supportActionBar
-
-        val tv = TextView(applicationContext)
-        val typeface = ResourcesCompat.getFont(this, R.font.montserrat_semibold)
-        val lp = RelativeLayout.LayoutParams(
-            RelativeLayout.LayoutParams.MATCH_PARENT,
-            RelativeLayout.LayoutParams.WRAP_CONTENT
-        )
-
-        tv.layoutParams = lp
-        tv.text = "Github User"
-
-        tv.textSize = 20f
-        tv.setTextColor(Color.WHITE)
-        tv.setTypeface(typeface, Typeface.NORMAL)
-        if (actionBar != null) {
-            actionBar.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
-            actionBar.customView = tv
-        }
+        val actionBarTitle = binding.toolbar
+        setSupportActionBar(actionBarTitle)
+        actionBarTitle.title = resources.getString(R.string.github_user)
     }
 
     private fun showLoading(state: Boolean) {

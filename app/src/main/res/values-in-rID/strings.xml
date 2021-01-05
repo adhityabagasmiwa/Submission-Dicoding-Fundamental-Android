@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Adhitya Bagas on 29/12/2020
+  ~ Copyright (c) 2020 . All rights reserved.
+  -->
+
 <resources>
     <string name="app_name">Submission Dicoding BFAA</string>
     <string name="setting">Pengaturan</string>
@@ -15,9 +19,23 @@
     <string name="share">Bagikan</string>
     <string name="tab_follower">PENGIKUT</string>
     <string name="tab_following">MENGIKUTI</string>
-    <string name="github_user">Pengguna Github</string>
-    <string name="change_language">Ganti Bahasa</string>
+    <string name="github_user">Github Users</string>
+    <string name="change_language">Ubah Bahasa</string>
     <string name="find_user">Mari Temukan Pengguna Github</string>
-    <string name="no_result">Maaf! Hasil Tidak Ditemukan :(</string>
+    <string name="no_result">Maaf ! Hasil Tidak Ditemukan :(</string>
     <string name="not_found_detail">Kami mohon maaf atas apa yang Anda cari. Silakan coba cara lain</string>
+    <string name="button_favorite">button favorite</string>
+    <string name="favorite">Favorite Users</string>
+    <string name="key_notifications">notifikasi</string>
+    <string name="fill_reminder">Reminder at 09:00 AM</string>
+    <string name="key_languages">bahasa</string>
+    <string name="summary_languages">Indonesia</string>
+    <string name="empty">Oops ! Data Pengguna Favorit Tidak Ada</string>
+    <string name="notification_title">Github Users</string>
+    <string name="notification_text">Mari cari pengguna popular di Github!</string>
+    <string name="added_favorite">Berhasil ditambahkan ke favorit !</string>
+    <string name="removed_favorite">Berhasil dihapus dari favorit !</string>
+    <string name="data_favorite">Tidak ada daftar data favorit saat ini !</string>
+    <string name="check_internet">Silakan periksa koneksi internet Anda</string>
+    <string name="failed_data">Gagal memuat data !</string>
 </resources>

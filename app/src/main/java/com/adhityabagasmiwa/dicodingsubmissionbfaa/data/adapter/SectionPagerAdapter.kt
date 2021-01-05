@@ -1,3 +1,8 @@
+/*
+ * Created by Adhitya Bagas on 29/12/2020
+ * Copyright (c) 2020 . All rights reserved.
+ */
+
 package com.adhityabagasmiwa.dicodingsubmissionbfaa.data.adapter
 
 import android.content.Context

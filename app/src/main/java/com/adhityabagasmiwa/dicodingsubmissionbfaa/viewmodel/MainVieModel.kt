@@ -1,14 +1,20 @@
+/*
+ * Created by Adhitya Bagas on 29/12/2020
+ * Copyright (c) 2020 . All rights reserved.
+ */
+
 package com.adhityabagasmiwa.dicodingsubmissionbfaa.viewmodel
 
 import android.content.Context
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.adhityabagasmiwa.dicodingsubmissionbfaa.R
 import com.adhityabagasmiwa.dicodingsubmissionbfaa.data.model.SearchUserResponse
 import com.adhityabagasmiwa.dicodingsubmissionbfaa.data.model.UserGithub
 import com.adhityabagasmiwa.dicodingsubmissionbfaa.data.network.ApiService
+import com.shashank.sony.fancytoastlib.FancyToast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -35,14 +41,13 @@ class MainVieModel : ViewModel() {
                     }
                 } catch (e: Exception) {
                     Log.d("Exception", e.message.toString())
-                    Toast.makeText(context, "Failed to get data", Toast.LENGTH_SHORT).show()
+                    FancyToast.makeText(context, context.resources.getString(R.string.failed_data), FancyToast.LENGTH_SHORT, FancyToast.ERROR, false).show()
                 }
             }
 
             override fun onFailure(call: Call<SearchUserResponse>, t: Throwable) {
                 Log.d("onFailure", t.message.toString())
-                Toast.makeText(context, "Please check your internet connection", Toast.LENGTH_SHORT)
-                    .show()
+                FancyToast.makeText(context, context.resources.getString(R.string.check_internet), FancyToast.LENGTH_SHORT, FancyToast.WARNING, false).show()
             }
         })
     }
@@ -59,14 +64,13 @@ class MainVieModel : ViewModel() {
                     }
                 } catch (e: Exception) {
                     Log.d("Exception", e.message.toString())
-                    Toast.makeText(context, "Failed to get data", Toast.LENGTH_SHORT).show()
+                    FancyToast.makeText(context, context.resources.getString(R.string.failed_data), FancyToast.LENGTH_SHORT, FancyToast.ERROR, false).show()
                 }
             }
 
             override fun onFailure(call: Call<UserGithub>, t: Throwable) {
                 Log.d("onFailure", t.message.toString())
-                Toast.makeText(context, "Please check your internet connection", Toast.LENGTH_SHORT)
-                    .show()
+                FancyToast.makeText(context, context.resources.getString(R.string.check_internet), FancyToast.LENGTH_SHORT, FancyToast.WARNING, false).show()
             }
         })
     }
@@ -87,17 +91,13 @@ class MainVieModel : ViewModel() {
                         }
                     } catch (e: Exception) {
                         Log.d("Exception", e.message.toString())
-                        Toast.makeText(context, "Failed to get data", Toast.LENGTH_SHORT).show()
+                        FancyToast.makeText(context, context.resources.getString(R.string.failed_data), FancyToast.LENGTH_SHORT, FancyToast.ERROR, false).show()
                     }
                 }
 
                 override fun onFailure(call: Call<ArrayList<UserGithub>>, t: Throwable) {
                     Log.d("onFailure", t.message.toString())
-                    Toast.makeText(
-                        context,
-                        "Please check your internet connection",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    FancyToast.makeText(context, context.resources.getString(R.string.check_internet), FancyToast.LENGTH_SHORT, FancyToast.WARNING, false).show()
                 }
             })
     }
@@ -117,14 +117,13 @@ class MainVieModel : ViewModel() {
                     }
                 } catch (e: Exception) {
                     Log.d("Exception", e.message.toString())
-                    Toast.makeText(context, "Failed to get data", Toast.LENGTH_SHORT).show()
+                    FancyToast.makeText(context, context.resources.getString(R.string.failed_data), FancyToast.LENGTH_SHORT, FancyToast.ERROR, false).show()
                 }
             }
 
             override fun onFailure(call: Call<ArrayList<UserGithub>>, t: Throwable) {
                 Log.d("onFailure", t.message.toString())
-                Toast.makeText(context, "Please check your internet connection", Toast.LENGTH_SHORT)
-                    .show()
+                FancyToast.makeText(context, context.resources.getString(R.string.check_internet), FancyToast.LENGTH_SHORT, FancyToast.WARNING, false).show()
             }
         })
     }

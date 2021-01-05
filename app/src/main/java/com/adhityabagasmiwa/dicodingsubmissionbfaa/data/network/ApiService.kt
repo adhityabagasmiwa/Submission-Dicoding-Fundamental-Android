@@ -1,3 +1,8 @@
+/*
+ * Created by Adhitya Bagas on 29/12/2020
+ * Copyright (c) 2020 . All rights reserved.
+ */
+
 package com.adhityabagasmiwa.dicodingsubmissionbfaa.data.network
 
 import okhttp3.OkHttpClient
@@ -8,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object ApiService {
 
     private const val BASE_URL = "https://api.github.com/"
-    private const val TOKEN = "0fd0a8da7194ea80e31b20db2c33e39b41141d6d"
+    private const val TOKEN = "YOUR GITHUB TOKEN"
     val endpoint: ApiEndpoint
         get() {
 

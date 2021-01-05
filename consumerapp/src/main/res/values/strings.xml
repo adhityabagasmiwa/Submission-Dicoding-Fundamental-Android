@@ -1,0 +1,36 @@
+<!--
+  ~ Created by Adhitya Bagas on 31/12/2020
+  ~ Copyright (c) 2020 . All rights reserved.
+  -->
+
+<resources>
+    <string name="app_name">Consumer App</string>
+    <string name="empty">Oops ! User Favorite Data is Empty</string>
+    <string name="favorite">Favorite Users</string>
+    <string name="username">Username</string>
+    <string name="type">User</string>
+    <string name="share">Share</string>
+    <string name="setting">Settings</string>
+    <string name="name">Name</string>
+    <string name="profile">Profile</string>
+    <string name="location">Location</string>
+    <string name="office">Office</string>
+    <string name="follower">Followers</string>
+    <string name="following">Following</string>
+    <string name="repository">Repository</string>
+    <string name="button_favorite">button favorite</string>
+    <string name="notification_title">Github Users</string>
+    <string name="notification_text">Let\'s find popular user on Github!</string>
+    <string name="key_notifications">notifications</string>
+    <string name="fill_reminder">Reminder at 09:00 AM</string>
+    <string name="key_languages">languages</string>
+    <string name="summary_languages">English</string>
+    <string name="change_language">Change Language</string>
+    <string name="tab_follower">FOLLOWERS</string>
+    <string name="tab_following">FOLLOWING</string>
+    <string name="added_favorite">Successfully added to favorites !</string>
+    <string name="removed_favorite">Successfully removed from favorites !</string>
+    <string name="data_favorite">There is no favorite data list at this time !</string>
+    <string name="check_internet">Please check Your internet connection</string>
+    <string name="failed_data">Failed to get data !</string>
+</resources>

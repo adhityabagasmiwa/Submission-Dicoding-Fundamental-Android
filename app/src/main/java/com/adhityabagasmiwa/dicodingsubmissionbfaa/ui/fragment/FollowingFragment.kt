@@ -1,3 +1,8 @@
+/*
+ * Created by Adhitya Bagas on 29/12/2020
+ * Copyright (c) 2020 . All rights reserved.
+ */
+
 package com.adhityabagasmiwa.dicodingsubmissionbfaa.ui.fragment
 
 import android.os.Bundle
@@ -5,7 +10,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.adhityabagasmiwa.dicodingsubmissionbfaa.data.adapter.FollowListAdapter
@@ -42,20 +46,16 @@ class FollowingFragment : Fragment() {
     }
 
     private fun setData() {
-        val intent = activity!!.intent.getParcelableExtra<UserGithub>(EXTRA_USERS_GITHUB)
+        val intent = activity?.intent?.getParcelableExtra<UserGithub>(EXTRA_USERS_GITHUB)
         getData(intent?.login)
         showRecyclerView()
     }
 
     private fun getData(username: String?) {
-        mainVieModel = ViewModelProvider(
-            activity!!,
-            ViewModelProvider.NewInstanceFactory()
-        ).get(MainVieModel::class.java)
-        mainVieModel.setFollowingList(activity!!, username)
-        mainVieModel.getFollowingList().observe(activity!!, Observer { results ->
+        mainVieModel = ViewModelProvider(requireActivity(), ViewModelProvider.NewInstanceFactory()).get(MainVieModel::class.java)
+        mainVieModel.setFollowingList(requireActivity(), username)
+        mainVieModel.getFollowingList().observe(requireActivity(), { results ->
             adapter.setData(results)
         })
     }
-
 }
